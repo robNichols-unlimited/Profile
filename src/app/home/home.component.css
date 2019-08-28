@@ -1,0 +1,45 @@
+.shift-theme {    
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradientBG 30s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.container {
+    display: flex;
+}
+
+.right-panel {
+    background-color: rgba(32, 32, 37, 0.2);
+    padding: 20px 15px;
+    min-width: 230px;    
+    flex-grow: 1;
+    order: 0;
+}
+
+.left-panel {
+    background-color: rgba(155,155,155,0.2);
+    flex-grow: 1;
+    order: 1;
+}
+
+.profile-pic {    
+    justify-content: center;
+}
+
+.profile-text {
+    color: #C2C3C4;
+}
