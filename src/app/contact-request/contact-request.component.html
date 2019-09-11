@@ -1,6 +1,22 @@
-<div>
+<form class="form" [formGroup]="contactForm">
     <label>
         Your Name:
-        <input type="text" [formControl]="contactName">
+        <input type="text" formControlName="contactName">
     </label>
-</div>
+    <br>
+    <label>
+        Your Email:
+        <input type="email" formControlName="contactEmail">
+    </label>
+    <br>
+    <label>
+        Type of Request:
+        <input type="radio" formControlName="requestType">Request Resume 
+        <input type="radio" formControlName="requestType">Request More Info
+    </label>
+    <br>
+    <label>
+        Message:
+        <textarea width="100%" wrap="soft" formControlName="requestMessage"></textarea>
+    </label>
+</form>
