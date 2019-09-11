@@ -41,5 +41,49 @@
 }
 
 .profile-text {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #C2C3C4;
+}
+
+.pro-title {    
+    font-weight: 600;
+}
+
+.pro-tools {    
+    list-style: square;
+}
+
+.container-content {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 10px;
+    align-content: space-around;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+}
+
+.container-content > .content-left, .container-content > .content-right {
+    padding: 5px 10px;
+}
+
+.content-head {
+    background-color: rgba(245, 245, 245, 0.6);
+    text-align: center;
+    flex: 1 100%;
+    padding: 15px 20px;    
+    margin: 0 5px 10px 5px;
+}
+
+.content-left {
+    background-color: rgba(245, 245, 245, 0.6);
+    flex-basis: 45%;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+.content-right {
+    background-color: rgba(245, 245, 245, 0.6);
+    flex-basis: 45%;
+    flex-grow: 1;
+    margin: 5px;
 }
