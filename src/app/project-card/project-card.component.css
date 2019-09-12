@@ -1,0 +1,63 @@
+.card {
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.6);
+    border-radius: 8px;
+}
+
+.pro-title {
+    font-size: 28px;
+    margin-right: 20px;
+}
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0
+}
+
+.tag {
+    background: #3BB0BF;
+    border-radius: 3px 0 0 3px;
+    color: #555555;
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-translation: color 0.2s;
+}
+
+.tag::before {
+    background: #3BB0BF;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
+  }
+
+  .tag::after {
+    background: #efd8ee;
+    border-bottom: 11px solid transparent;
+    border-left: 10px solid #3BB0BF;
+    border-top: 11px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .tag:hover {
+    background-color: #CF4D41;
+    color: white;
+  }
+  
+  .tag:hover::after {
+     border-left-color: #CF4D41; 
+  }
