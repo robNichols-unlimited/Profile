@@ -63,7 +63,7 @@
 }
 
 .container-content > .content-left, .container-content > .content-right {
-    padding: 5px 10px;
+    padding: 5px 10px 15px 10px;
 }
 
 .content-head {

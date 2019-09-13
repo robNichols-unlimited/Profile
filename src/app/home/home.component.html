@@ -19,10 +19,12 @@
                     List some hobbies in a fun way.
                 </p>
             </div>
-            <div class="content content-left">LIST PROJECTS BUILT - Link to some personal stuff (Word generator, host on profile pages, etc) Link to Github
-                <project-card></project-card>
+            <div class="content content-left">PROJECTS
+                <div *ngFor="let project of projects">
+                    <project-card [inProject]="project"></project-card>
+                </div>                
             </div>
-            <div class="content content-right">CREATE CONTACT FORM - Contact for resume or further contact details.
+            <div class="content content-right">CONTACT FORM
                 <contact-request></contact-request>
             </div>
         </div>

@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ProjectService } from '../services/project.service';
+import { Component, Input, OnInit } from '@angular/core';
+
 
 @Component({
     selector: 'project-card',
@@ -8,25 +8,25 @@ import { ProjectService } from '../services/project.service';
 })
 
 export class ProjectCardComponent implements OnInit {
-    projects: Array<Project>;
-    
-    constructor(private projectService: ProjectService){}
+    @Input()
+    inProject: Project;
+    available: string;
+    sourcePath: string;
+    altText: string;
 
     ngOnInit(){
-        this.projectService.getProjects().then(result => {
-            if(result !== null){
-                this.projects = result;
-            } else {
-                this.projects = [{
-                    name: "Failed to get REAL projects",
-                    tags: ["TypeScript", "HTML", "CSS", "Angular", "VS Code"],
-                    details: "Oops. There was a problem retrieving the projects from the file. Please double check.",
-                    public: true,
-                    gallery: [{}],
-                    link: ""
-                }]
-            }            
-        })
+        if(this.inProject.public) {
+            this.available = "Public";
+        } else {
+            this.available = "Private";
+        }
+
+        if(this.inProject.gallery) {
+            this.inProject.gallery.forEach(image => {
+                this.sourcePath = image.src;
+                this.altText = image.alt;
+            });            
+        }
     }
 }
 
@@ -36,6 +36,11 @@ export class Project {
     tags: Array<string>;
     details: string;
     public: boolean;
-    gallery: Array<object>;//how to make this an array of images.
+    gallery: Array<Gallery>;//how to make this an array of images.
     link: string;
+}
+
+export class Gallery {
+    src: string;
+    alt: string;
 }

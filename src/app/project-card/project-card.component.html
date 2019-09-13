@@ -1,14 +1,15 @@
 <div class="card">
-    <label class="pro-title">project.name</label>
-    <div class="tag">public</div>
-    <ul class="tags">
-        <li class="tag">tag</li>
-        <li class="tag">tag2</li>
+    <label class="pro-title">{{inProject.name}}</label>
+    <div class="tag">{{available}}</div>
+    <ul class="tags" *ngFor="let badge of inProject.tags">
+        <li class="tag">{{badge}}</li>
     </ul>
     <hr>
-    <div>details</div>
+    <div>{{inProject.details}}</div>
     <hr>
-    <div>gallery</div>
+    <div *ngFor="let path of inProject.gallery">
+        <img *ngIf="inProject.gallery.length > 0" src="sourcePath" alt="altText">
+    </div>
     <hr>
-    <div>link</div>
+    <div>{{inProject.link}}</div>
 </div>
