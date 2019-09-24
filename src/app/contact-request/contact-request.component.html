@@ -1,22 +1,23 @@
 <form class="form" [formGroup]="contactForm">
     <label>
         Your Name:
-        <input type="text" formControlName="contactName">
+        <input class="single-text" type="text" formControlName="contactName">
     </label>
     <br>
     <label>
         Your Email:
-        <input type="email" formControlName="contactEmail">
+        <input class="single-text" type="email" formControlName="contactEmail">
     </label>
     <br>
-    <label>
+    <br>
+    <label class="spc">
         Type of Request:
         <input type="radio" formControlName="requestType">Request Resume 
         <input type="radio" formControlName="requestType">Request More Info
     </label>
     <br>
-    <label>
-        Message:
-        <textarea width="100%" wrap="soft" formControlName="requestMessage"></textarea>
-    </label>
+    <br>    
+    <label>Message:</label>
+    <br>    
+    <textarea class="request-box" width="95%" wrap="soft" formControlName="requestMessage"></textarea>
 </form>

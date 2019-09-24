@@ -15,6 +15,7 @@ export class ProjectCardComponent implements OnInit {
     altText: string;
 
     ngOnInit(){
+        let availability = document.getElementById('availability')[0];
         if(this.inProject.public) {
             this.available = "Public";
         } else {
