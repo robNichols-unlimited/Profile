@@ -1,10 +1,21 @@
-[
-    {
-        "name": "Failed to get REAL projects",
-        "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code"],
-        "details": "Oops. There was a problem retrieving the projects from the file. Please double check.",
-        "public": false,
-        "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
-        "link": ""
-    }
-]
+{"projects" :
+    [
+        {
+            "name": "Crochet App",
+            "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code, C#"],
+            "details": "This was a proof of concept app built for a friend. They were looking for a startup that would be an app that shows different crochet patterns based on the pattern, the size and the weight of the yarn used. Not having much knowledge of crocheting, it has been a fun adventure learning more about their hobby as well as putting it into an application. The future goal would be to finish it out and make it a mobile application.",
+            "public": true,
+            "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
+            "link": ""
+        },
+
+        {
+            "name": "Profile Application",
+            "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code"],
+            "details": "This is this page. I wanted to use this opportunity to share what I have learned and to learn more as I come across new challenges.",
+            "public": true,
+            "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
+            "link": ""
+        }
+    ]
+}

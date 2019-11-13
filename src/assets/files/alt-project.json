@@ -1,0 +1,10 @@
+[
+    {
+        "name": "Failed to get REAL projects",
+        "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code"],
+        "details": "Oops. There was a problem retrieving the projects from the file. Please double check.",
+        "public": false,
+        "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
+        "link": ""
+    }
+]
