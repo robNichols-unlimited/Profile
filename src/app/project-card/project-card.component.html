@@ -8,7 +8,8 @@
     <div>{{inProject.details}}</div>
     <hr>
     <div *ngFor="let path of inProject.gallery">
-        <img *ngIf="inProject.gallery.length > 0" src="sourcePath" alt="altText">
+        <!--set container for images flexbox- allow them to be smaller, up to two wide, and wrap.-->        
+        <img *ngIf="inProject.gallery.length > 0" [src]="path.src" [alt]="path.alt" width="75%">
     </div>
     <hr>
     <div>{{inProject.link}}</div>
