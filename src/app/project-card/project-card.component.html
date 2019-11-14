@@ -1,16 +1,17 @@
 <div class="card">
     <label class="pro-title">{{inProject.name}}</label>
-    <div id="availability" class="pub-tag">{{available}}</div>
-    <ul class="tags" *ngFor="let badge of inProject.tags">
-        <li class="tag">{{badge}}</li>
-    </ul>
+    <div id="availability" class="pub-tag" [ngClass]="{ 'pub-tag': available=='Public', 'pri-tag': available=='Private' }">{{available}}</div>
+    <br>
+    <span class="tags" *ngFor="let badge of inProject.tags">
+        <span class="tag">{{badge}}</span>
+    </span>
     <hr>
     <div>{{inProject.details}}</div>
     <hr>
-    <div *ngFor="let path of inProject.gallery">
-        <!--set container for images flexbox- allow them to be smaller, up to two wide, and wrap.-->        
-        <img *ngIf="inProject.gallery.length > 0" [src]="path.src" [alt]="path.alt" width="75%">
-    </div>
+    <span *ngFor="let path of inProject.gallery">
+        <!--set container for images flexbox- allow them to be smaller, up to two wide, and wrap. Future add modal display?-->
+        <img *ngIf="inProject.gallery.length > 0" [src]="path.src" [alt]="path.alt" width="50%">
+    </span>
     <hr>
     <div>{{inProject.link}}</div>
 </div>

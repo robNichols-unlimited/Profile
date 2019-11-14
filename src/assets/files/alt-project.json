@@ -20,7 +20,13 @@
         "tags": ["AngularJS", "HTML", "CSS", "JavaScript", "C#", "SQL Server", ".NET Framework"],
         "details": "An company application",
         "public": false,
-        "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
+        "gallery": 
+            [
+                {"src": "../../assets/images/sawP-job.jpg", "alt":"Jobs"},
+                {"src": "../../assets/images/sawP-Inv.jpg", "alt":"Inventory"},
+                {"src": "../../assets/images/sawP-batch.jpg", "alt":"Batch"},
+                {"src": "../../assets/images/sawP-opt.jpg", "alt":"Optimizer"}
+            ],
         "link": "" 
     }
 ]

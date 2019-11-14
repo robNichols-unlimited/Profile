@@ -129,7 +129,11 @@
     flex-basis: 45%;
     flex-grow: 1;
     margin: 5px;
-    max-height: 750px;
+    max-height: 72vh;    
+}
+
+.content-scroll {
+    height: 70vh;
     overflow-y: auto;
 }
 

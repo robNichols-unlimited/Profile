@@ -1,10 +1,13 @@
 # Profile
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+The purpose of this project is to be a spalsh page portfolio, sharing some of the projects that I have worked on professionally and personally. 
+Those personal projects that are currently hosted will have a link to them in the project listing.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4300/`. The app will automatically reload if you change any of the source files.
+Or run `ng serve -o` to have a browser window auto-magically open for you and watch/reload and changes to the source files.
 
 ## Code scaffolding
 
@@ -21,6 +24,7 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Currently e2e tests have not been created
 
 ## Further help
 
