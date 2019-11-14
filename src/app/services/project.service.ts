@@ -4,7 +4,7 @@ import { Project } from '../project-card/project-card.component';
 
 @Injectable()
 export class ProjectService {
-    private path = '../../assets/files/project.json';
+    private path = '../../assets/files/alt-project.json';
 
     constructor(private http: HttpClient) {}
 

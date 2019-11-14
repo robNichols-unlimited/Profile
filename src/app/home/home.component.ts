@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
     ngOnInit(){
         this.projectService.getProjects().then(result => {
             if(result !== null){
-                this.projects = result.projects;
+                this.projects = result;
             } else {
                 this.projects = [{
                     name: "Failed to get REAL projects",

@@ -34,6 +34,7 @@
     background-color: rgba(155,155,155,0.2);
     flex-grow: 1;
     order: 1;
+    overflow-y: hidden;
 }
 
 .profile-pic {    
@@ -128,6 +129,8 @@
     flex-basis: 45%;
     flex-grow: 1;
     margin: 5px;
+    max-height: 750px;
+    overflow-y: auto;
 }
 
 .content-right {
@@ -135,6 +138,7 @@
     flex-basis: 45%;
     flex-grow: 1;
     margin: 5px;
+    overflow-y: auto;
 }
 
 .project-buffer {
