@@ -1,7 +1,7 @@
 [
     {
         "name": "Crochet App",
-        "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code, C#"],
+        "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code", "C#"],
         "details": "This was a proof of concept app built for a friend. They were looking for a startup that would be an app that shows different crochet patterns based on the pattern, the size and the weight of the yarn used. Not having much knowledge of crocheting, it has been a fun adventure learning more about their hobby as well as putting it into an application. The future goal would be to finish it out and make it a mobile application.",
         "public": true,
         "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
