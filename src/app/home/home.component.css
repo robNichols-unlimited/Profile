@@ -133,7 +133,7 @@
 }
 
 .content-scroll {
-    height: 70vh;
+    height: 60vh;
     overflow-y: auto;
 }
 
@@ -147,4 +147,21 @@
 
 .project-buffer {
     margin: 10px 0 20px 0;
+}
+
+.hobby-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hobby-item {
+    /*shake on hover, border around icon*/
+    margin: 0 5px;
+    border: 2px solid #158D5B;
+    border-radius: 5px;
+}
+
+.hobby-item:hover {
+    cursor: pointer;
+    background-color: rgba(245, 245, 245, 0.6);
 }
