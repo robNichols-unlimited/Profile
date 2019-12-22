@@ -161,7 +161,19 @@
     border-radius: 5px;
 }
 
+.hobby-item .on-right {
+    align-items: flex-start;
+}
+
 .hobby-item:hover {
     cursor: pointer;
     background-color: rgba(245, 245, 245, 0.6);
+}
+
+.modal-title {
+    font-family: fantasy;
+    color: red;
+    font-size: 30pt;
+    margin: 0;
+    text-align: center;
 }

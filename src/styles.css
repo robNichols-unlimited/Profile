@@ -2,3 +2,39 @@
 body {
     margin: 0;
 }
+
+modal {
+    display: none;    
+}
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 1000;
+    overflow: auto;
+}
+.modal-body {
+    padding: 20px;
+    border-radius: 8px;
+    background: rgb(235, 235, 235);
+    margin-top: 40px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+.modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 900;
+}
+body .modal-open {
+    overflow: hidden;
+}

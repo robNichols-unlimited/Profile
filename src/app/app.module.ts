@@ -11,6 +11,8 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { ContactRequestComponent } from './contact-request/contact-request.component';
 
 import { ProjectService } from './services/project.service';
+import { ModalService } from './services/modal.service';
+import { ModalComponent } from './directives/modal.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { ProjectService } from './services/project.service';
     HomeComponent,
     NavigationComponent,
     ProjectCardComponent,
-    ContactRequestComponent
+    ContactRequestComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +30,8 @@ import { ProjectService } from './services/project.service';
     HttpClientModule
   ],
   providers: [
-    ProjectService
+    ProjectService,
+    ModalService
   ],
   bootstrap: [AppComponent]
 })

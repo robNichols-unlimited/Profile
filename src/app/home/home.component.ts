@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from '../services/project.service';
 import { Project } from '../project-card/project-card.component';
+import { ModalService } from '../services/modal.service';
 
 @Component({
   selector: 'home',
@@ -9,8 +10,9 @@ import { Project } from '../project-card/project-card.component';
 })
 export class HomeComponent implements OnInit {
   projects: Array<Project>;
+  bodyText: string;
     
-    constructor(private projectService: ProjectService){}
+    constructor(private projectService: ProjectService, private modalService: ModalService){}
 
     ngOnInit(){
         this.projectService.getProjects().then(result => {
@@ -26,7 +28,15 @@ export class HomeComponent implements OnInit {
                     link: ""
                 }]
             }            
-        })
+        });
+        this.bodyText = 'Test Modal';
     }
 
+    openModal(id: string) {
+        this.modalService.open(id);
+    }
+
+    closeModal(id: string) {
+        this.modalService.close(id);
+    }
 }

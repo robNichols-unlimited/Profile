@@ -20,11 +20,37 @@
                 <br><br>
                 <div class="hobby-list">
                     <span>Hobbies: </span>
-                    <img class="hobby-item" src="../../assets/images/control.png" style="width:100px;height:100px;"/>
-                    <img class="hobby-item" src="../../assets/images/piano.png" style="width:100px;height:100px;"/>
-                    <img class="hobby-item" src="../../assets/images/code.png" style="width:100px;height:100px;"/>
-                </div>
+                    <img class="hobby-item" src="../../assets/images/control.png" style="width:100px;height:100px;" (click)="openModal('gameHobby')"/>
+                    <img class="hobby-item" src="../../assets/images/piano.png" style="width:100px;height:100px;" (click)="openModal('musicHobby')"/>
+                    <img class="hobby-item" src="../../assets/images/code.png" style="width:100px;height:100px;" (click)="openModal('codeHobby')"/>
+                    <img class="hobby-item on-right" src="../../assets/images/code.png" style="width:100px;height:100px;" (click)="openModal('contact')"/>
+                </div>                
             </div>
+
+            <modal id="gameHobby">
+                <p class="modal-title">Game Title</p>
+                <hr>
+                <p>I love playing games. I am not a huge fan of games like Fortnight, but do enjoy playing co-op games. Most frequently I play
+                    casual games on my phone that I can play in short time frames. But when I do have more time available I usually play PS4. Lately 
+                    the games I play are games like Final Fantasy 15, Zero Horizon, and the Arkham Batman series. I am really looking forward to 
+                    playing the Final Fantasy 7 Remake. I will on occation play more retro games like the old NES and SNES games. <br>
+                    I am not opposed to playing table-top games or card games with friends and families either.
+                </p>
+            </modal>
+            <modal id="musicHobby">
+                <p class="modal-title">Music Title</p>
+                <hr>
+                <p>Modal text body</p>
+            </modal>
+            <modal id="codeHobby">
+                <p class="modal-title">Code Title</p>
+                <hr>
+                <p>Modal text body</p>
+            </modal>
+            <modal id="contact">
+                <contact-request></contact-request>
+            </modal>
+
             <div class="content content-left">PROJECTS
                 <div class="content-scroll">
                     <div *ngFor="let project of projects" class="project-buffer">
@@ -32,9 +58,9 @@
                     </div>
                 </div>
             </div>
-            <div class="content content-right">CONTACT FORM
+            <!-- <div class="content content-right">CONTACT FORM
                 <contact-request></contact-request>
-            </div>
+            </div> -->
         </div>        
     </div>
 </div>
