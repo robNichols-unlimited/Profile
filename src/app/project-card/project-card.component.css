@@ -88,4 +88,9 @@
      border-left-color: #CF4D41; 
   }
 
+  .pro-img {
+    margin: 5px;
+    width: 40%;
+    border: solid black 1px;
+  }
   /*----- image gallery css -----*/

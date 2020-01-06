@@ -10,7 +10,7 @@
     <hr>
     <span *ngFor="let path of inProject.gallery">
         <!--set container for images flexbox- allow them to be smaller, up to two wide, and wrap. Future add modal display?-->
-        <img *ngIf="inProject.gallery.length > 0" [src]="path.src" [alt]="path.alt" width="50%">
+        <img class="pro-img" *ngIf="inProject.gallery.length > 0" [src]="path.src" [alt]="path.alt" >
     </span>
     <hr>
     <div>{{inProject.link}}</div>

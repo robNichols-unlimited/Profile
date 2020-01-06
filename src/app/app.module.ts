@@ -11,6 +11,7 @@ import { ProjectCardComponent } from './project-card/project-card.component';
 import { ContactRequestComponent } from './contact-request/contact-request.component';
 
 import { ProjectService } from './services/project.service';
+import { HobbyService } from './services/hobby.service';
 import { ModalService } from './services/modal.service';
 import { ModalComponent } from './directives/modal.directive';
 
@@ -31,6 +32,7 @@ import { ModalComponent } from './directives/modal.directive';
   ],
   providers: [
     ProjectService,
+    HobbyService,
     ModalService
   ],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ModalService } from '../services/modal.service';
 
 
 @Component({
@@ -13,6 +14,8 @@ export class ProjectCardComponent implements OnInit {
     available: string;
     sourcePath: string;
     altText: string;
+
+    constructor(private modalService: ModalService){}
 
     ngOnInit(){
         let availability = document.getElementById('availability')[0];
