@@ -10,9 +10,9 @@
     {
         "name": "Profile Application",
         "tags": ["TypeScript", "HTML", "CSS", "Angular", "VS Code"],
-        "details": "This is this page. I wanted to use this opportunity to share what I have learned and to learn more as I come across new challenges.",
+        "details": "The page you are visiting is my profile application. I wanted to use this opportunity to share what I have learned and to learn more as I come across new challenges. It has been a really fun project to work on. I have implemented a modal system, used services to load data, etc. I plan to continue enhancing this site.",
         "public": true,
-        "gallery": [{"src": "../../assets/images/oops.jpg", "alt":"Oops!"}],
+        "gallery": [{"src": "../../assets/images/profile-Img.jpg", "alt":"Profile"}],
         "link": ""        
     },
     {
