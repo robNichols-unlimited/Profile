@@ -1,3 +1,20 @@
 [
-    {}
+    {
+        "id": "game",
+        "img": "../../assets/images/control.png",
+        "title": "Games",
+        "desc": "Board games. Card games. Video games. I really enjoy games."
+    },
+    {
+        "id": "music",
+        "img": "../../assets/images/piano.png",
+        "title": "Piano",
+        "desc": "I am still learning, but I enjoy playing the piano and listening to piano music."
+    },
+    {
+        "id": "code",
+        "img": "../../assets/images/code.png",
+        "title": "Programming",
+        "desc": "I love to program. I enjoy the challenges that coding brings. It is an amazing field where there is always something more to learn!"
+    }
 ]

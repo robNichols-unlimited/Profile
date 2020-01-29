@@ -9,8 +9,8 @@ export class ModalService {
         this.modals = this.modals.filter(x => x.id != id); //remove modal from active array of modals        
     }
 
-    open(id: string) {
-        let modal: any = this.modals.filter(x => x.id === id)[0];
+    open(message: any) {
+        let modal: any = this.modals.filter(x => x.id === message.id)[0];
         modal.open();
     }
 

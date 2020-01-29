@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Hobbies } from '../home/home.component';
+import { Hobbies } from '../models/hobbies';
 
 @Injectable()
 export class HobbyService {

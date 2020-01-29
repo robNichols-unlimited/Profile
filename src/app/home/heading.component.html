@@ -1,0 +1,17 @@
+<div class="content-head">
+    <div>{{welcome}}</div>
+    <br><br>
+    <div>{{content}}</div>
+    <br>
+    <!--hobbies-->
+    <div class="hobby-left">
+        <label>Hobbies: </label>
+        <br>
+        <span *ngFor="let hobby of hobbies">
+            <img class="hobby-item" src={{hobby.img}} style="width:100px;height:100px;" (click)="openModal(hobby)"/>
+        </span>
+        <span class="contact-right">            
+            <img class="hobby-item on-right" src="../../assets/images/mail.png" style="width:100px;height:100px; float:right;" (click)="openModal('contact')"/>
+        </span>    
+    </div>
+</div>

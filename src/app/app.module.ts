@@ -9,6 +9,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { ContactRequestComponent } from './contact-request/contact-request.component';
+import { HeadingComponent } from './home/heading.component';
 
 import { ProjectService } from './services/project.service';
 import { HobbyService } from './services/hobby.service';
@@ -19,6 +20,7 @@ import { ModalComponent } from './directives/modal.directive';
   declarations: [
     AppComponent, 
     HomeComponent,
+    HeadingComponent,
     NavigationComponent,
     ProjectCardComponent,
     ContactRequestComponent,
