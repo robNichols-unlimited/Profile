@@ -1,7 +1,7 @@
 # Profile
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
-The purpose of this project is to be a spalsh page portfolio, sharing some of the projects that I have worked on professionally and personally. 
+The purpose of this project is to be a splash page portfolio, sharing some of the projects that I have worked on professionally and personally. 
 Those personal projects that are currently hosted will have a link to them in the project listing.
 
 ## Development server
