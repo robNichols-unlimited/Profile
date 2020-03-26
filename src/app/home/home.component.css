@@ -22,15 +22,17 @@
     display: flex;
 }
 
-.right-panel {
-    background-color: rgba(32, 32, 37, 0.2);
-    padding: 20px 15px;
-    min-width: 230px;    
-    flex-grow: 1;
-    order: 0;
+@media screen and (min-width: 850px){
+    .left-panel {
+        background-color: rgba(32, 32, 37, 0.2);
+        padding: 20px 15px;
+        min-width: 230px;    
+        flex-grow: 1;
+        order: 0;
+    }
 }
 
-.left-panel {
+.right-panel {
     background-color: rgba(155,155,155,0.2);
     flex-grow: 1;
     order: 1;
